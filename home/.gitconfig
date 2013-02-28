@@ -1,0 +1,7 @@
+[user]
+	name = Shawn Dahlen
+	email = shawn@dahlen.me
+[color]
+	ui = true
+[push]
+	default = simple

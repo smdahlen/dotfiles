@@ -1,0 +1,114 @@
+[submodule "vim/pathogen"]
+	path = vim/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/solarized"]
+	path = vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/javascript"]
+	path = vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/markdown"]
+	path = vim/bundle/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/bundle/bufexplorer"]
+	path = vim/bundle/bufexplorer
+	url = https://github.com/corntrace/bufexplorer.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/zencoding"]
+	path = vim/bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git
+[submodule "vim/bundle/css3-syntax"]
+	path = vim/bundle/css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "vim/bundle/less"]
+	path = vim/bundle/less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "vim/bundle/html5-syntax"]
+	path = vim/bundle/html5-syntax
+	url = https://github.com/othree/html5-syntax.vim.git
+[submodule "vim/bundle/handlebars"]
+	path = vim/bundle/handlebars
+	url = https://github.com/nono/vim-handlebars.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/bundle/commentary"]
+	path = vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/bundle/rooter"]
+	path = vim/bundle/rooter
+	url = https://github.com/airblade/vim-rooter.git
+[submodule "vim/bundle/unimpaired"]
+	path = vim/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "vim/bundle/base16"]
+	path = vim/bundle/base16
+	url = https://github.com/chriskempson/base16-vim.git
+[submodule "vim/bundle/ruby"]
+	path = vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "vim/bundle/tmux"]
+	path = vim/bundle/tmux
+	url = https://github.com/zaiste/tmux.vim.git
+[submodule "vim/bundle/repeat"]
+	path = vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "home/.vim/pathogen"]
+	path = home/.vim/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "home/.vim/bundle/bufexplorer"]
+	path = home/.vim/bundle/bufexplorer
+	url = https://github.com/corntrace/bufexplorer.git
+[submodule "home/.vim/bundle/commentary"]
+	path = home/.vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "home/.vim/bundle/fugitive"]
+	path = home/.vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "home/.vim/bundle/javascript"]
+	path = home/.vim/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "home/.vim/bundle/markdown"]
+	path = home/.vim/bundle/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "home/.vim/bundle/css3-syntax"]
+	path = home/.vim/bundle/css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "home/.vim/bundle/html5-syntax"]
+	path = home/.vim/bundle/html5-syntax
+	url = https://github.com/othree/html5-syntax.vim.git
+[submodule "home/.vim/bundle/repeat"]
+	path = home/.vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "home/.vim/bundle/rooter"]
+	path = home/.vim/bundle/rooter
+	url = https://github.com/airblade/vim-rooter.git
+[submodule "home/.vim/bundle/ruby"]
+	path = home/.vim/bundle/ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "home/.vim/bundle/surround"]
+	path = home/.vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "home/.vim/bundle/syntastic"]
+	path = home/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "home/.vim/bundle/tabular"]
+	path = home/.vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "home/.vim/bundle/tmux"]
+	path = home/.vim/bundle/tmux
+	url = https://github.com/zaiste/tmux.vim.git
+[submodule "home/.vim/bundle/unimpaired"]
+	path = home/.vim/bundle/unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "home/.vim/bundle/zencoding"]
+	path = home/.vim/bundle/zencoding
+	url = https://github.com/mattn/zencoding-vim.git
