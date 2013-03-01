@@ -10,7 +10,7 @@ shopt -s histappend cmdhist
 set -o vi
 
 # sets history variables
-# HISTCONTROL=ignoredups:ignorespace
+HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 
@@ -22,7 +22,7 @@ nametab () {
 # updates vim plugins to latest master commit
 update_vim_plugins () {
     if [ -d ~/.vim ]; then
-        cd "$(readlink -n ~/.vim)/.."
+        cd "$(readlink -n ~/.vim)/../.."
         git submodule foreach 'git fetch origin; git checkout master'
     fi
 }
@@ -34,7 +34,7 @@ bind -x '"\C-l": clear'
 
 # enables color support
 CLICOLOR=1
-LS_COLORS='di=34:fi=0:ln=35:ex=31:so=32:pi=33'
+LS_COLORS='no=0:di=34:fi=0:ln=35:ex=31:so=32:pi=33'
 test $(uname) = 'Linux' && alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
@@ -53,7 +53,7 @@ if hash rbenv 2>/dev/null; then
     rbenv rehash
 fi
 
-export CLICOLOR EDITOR PS1 PATH
+export CLICOLOR EDITOR PS1 PATH LS_COLORS
 
 # sources local definitions
 if [ -f ~/.bashrc.local ]; then
