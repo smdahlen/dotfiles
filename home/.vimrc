@@ -1,6 +1,7 @@
 execute pathogen#infect()
 
 set nocompatible
+set encoding=utf-8
 
 " enable syntax highlighting and file type detection
 syntax enable
