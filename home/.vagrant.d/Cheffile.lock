@@ -1,8 +1,0 @@
-SITE
-  remote: http://community.opscode.com/api/v1
-  specs:
-    homesick (0.3.2)
-
-DEPENDENCIES
-  homesick (= 0.3.2)
-
