@@ -62,6 +62,9 @@ set foldnestmax=3
 set nofoldenable
 set foldlevel=1
 
+" set clipboard to use unnamed register
+set clipboard=unnamed
+
 " set file type specifics (move to ftplugin)
 autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2
 autocmd FileType tmux setlocal commentstring=#\ %s
