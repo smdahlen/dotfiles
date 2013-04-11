@@ -1,4 +1,4 @@
 *.swp
 .netrwhist
-home/.vagrant.d/cookbooks
-home/.vagrant.d/tmp
+home/.vim/bundle/*
+!home/.vim/bundle/vundle
