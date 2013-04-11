@@ -1,4 +1,4 @@
-execute pathogen#infect()
+source bundles.vim
 
 set nocompatible
 set encoding=utf-8
