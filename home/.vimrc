@@ -70,9 +70,13 @@ autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2
 autocmd FileType tmux setlocal commentstring=#\ %s
 
 " setup tailored key mappings
-let mapleader = ","
+let mapleader = ','
 nnoremap <CR> :noh<CR><CR>
-imap jk <ESC>
-map <leader>s ?{<CR>jV/^\s*\}\=$<CR>k:sort<CR>:let @/=''<CR>
-nmap <leader>- :t.<CR>:s/./-/g<CR>:noh<CR><CR>
-nmap <leader>= :t.<CR>:s/./=/g<CR>:noh<CR><CR>
+inoremap jk <ESC>
+noremap <leader>s ?{<CR>jV/^\s*\}\=$<CR>k:sort<CR>:let @/=''<CR>
+
+nnoremap <leader>- :t.<CR>:s/./-/g<CR>:noh<CR><CR>
+nnoremap <leader>= :t.<CR>:s/./=/g<CR>:noh<CR><CR>
+
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
