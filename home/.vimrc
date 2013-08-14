@@ -49,8 +49,8 @@ set noswapfile
 
 " enable tab to space replacement
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 " set default color scheme
 set background=dark
@@ -66,7 +66,6 @@ set foldlevel=1
 set clipboard=unnamed
 
 " set file type specifics (move to ftplugin)
-autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2
 autocmd FileType tmux setlocal commentstring=#\ %s
 
 " setup tailored key mappings
