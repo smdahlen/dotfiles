@@ -79,3 +79,25 @@ nnoremap <leader>= :t.<CR>:s/./=/g<CR>:noh<CR><CR>
 
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+" define settings for emmet
+let g:user_emmet_settings = {'html': {'empty_element_suffix': '>'}}
+
+" ignore npm and bower directories for ctrlp
+let g:ctrlp_custom_ignore = {
+      \ 'dir': '\v[\/](node_modules|bower_components)$'
+      \ }
+
+" hide statusline in ctrlp buffer
+let g:ctrlp_buffer_func = {
+      \ 'enter': 'HideStatusLine',
+      \ 'exit':  'ShowStatusLine',
+      \ }
+
+func! HideStatusLine()
+  set laststatus=0
+endfunc
+
+func! ShowStatusLine()
+  set laststatus=2
+endfunc
