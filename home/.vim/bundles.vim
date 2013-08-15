@@ -22,5 +22,6 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'zaiste/tmux.vim'
 Bundle 'tpope/vim-repeat'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
