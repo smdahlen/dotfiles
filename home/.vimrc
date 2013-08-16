@@ -88,9 +88,6 @@ let g:ctrlp_custom_ignore = {
       \ 'dir': '\v[\/](node_modules|bower_components)$'
       \ }
 
-" set ctrlp to default to buffer
-let g:ctrlp_cmd = 'CtrlPBuffer'
-
 " hide statusline in ctrlp buffer
 let g:ctrlp_buffer_func = {
       \ 'enter': 'HideStatusLine',
