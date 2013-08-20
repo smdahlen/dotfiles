@@ -80,6 +80,8 @@ nnoremap <leader>= :t.<CR>:s/./=/g<CR>:noh<CR><CR>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
+inoremap <c-u> <esc>gUiwea
+
 " define settings for emmet
 let g:user_emmet_settings = {'html': {'empty_element_suffix': '>'}}
 
