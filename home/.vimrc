@@ -33,8 +33,8 @@ set number
 set laststatus=2
 set statusline=%f\ %y%m%{fugitive#statusline()}%=%l,%c%V
 
-" show unwanted whitespace (tabs and trailing spaces)
-set list listchars=tab:»·,trail:·
+" set whitespace characters (tabs and trailing spaces)
+set nolist listchars=tab:»\ ,trail:·
 
 " enable line wrapping breaking at word boundaries
 set wrap
@@ -47,10 +47,11 @@ set scrolloff=5
 set nobackup
 set noswapfile
 
-" enable tab to space replacement
-set expandtab
-set shiftwidth=2
+" set default indentation of 2 character-wide tabs
+set noexpandtab
 set softtabstop=2
+set tabstop=2
+set shiftwidth=2
 
 " set default color scheme
 set background=dark
@@ -87,19 +88,19 @@ let g:user_emmet_settings = {'html': {'empty_element_suffix': '>'}}
 
 " ignore npm and bower directories for ctrlp
 let g:ctrlp_custom_ignore = {
-      \ 'dir': '\v[\/](node_modules|bower_components)$'
-      \ }
+			\ 'dir': '\v[\/](node_modules|bower_components)$'
+			\ }
 
 " hide statusline in ctrlp buffer
 let g:ctrlp_buffer_func = {
-      \ 'enter': 'HideStatusLine',
-      \ 'exit':  'ShowStatusLine',
-      \ }
+			\ 'enter': 'HideStatusLine',
+			\ 'exit':  'ShowStatusLine',
+			\ }
 
 func! HideStatusLine()
-  set laststatus=0
+	set laststatus=0
 endfunc
 
 func! ShowStatusLine()
-  set laststatus=2
+	set laststatus=2
 endfunc

@@ -31,19 +31,19 @@ let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
 if exists('base16colorspace') && base16colorspace == "256"
-  let s:cterm01 = "18"
-  let s:cterm02 = "19"
-  let s:cterm04 = "20"
-  let s:cterm06 = "21"
-  let s:cterm09 = "16"
-  let s:cterm0F = "17"
+	let s:cterm01 = "18"
+	let s:cterm02 = "19"
+	let s:cterm04 = "20"
+	let s:cterm06 = "21"
+	let s:cterm09 = "16"
+	let s:cterm0F = "17"
 else
-  let s:cterm01 = "10"
-  let s:cterm02 = "11"
-  let s:cterm04 = "12"
-  let s:cterm06 = "13"
-  let s:cterm09 = "09"
-  let s:cterm0F = "14"
+	let s:cterm01 = "10"
+	let s:cterm02 = "11"
+	let s:cterm04 = "12"
+	let s:cterm06 = "13"
+	let s:cterm09 = "09"
+	let s:cterm0F = "14"
 endif
 
 " Theme Setup
@@ -53,21 +53,21 @@ let g:colors_name = "eighties"
 
 " Highlighting function
 fun! <SID>hi(group, guifg, guibg, ctermfg, ctermbg, attr)
-  if a:guifg != ""
-    exec "hi " . a:group . " guifg=#" . a:guifg
-  endif
-  if a:guibg != ""
-    exec "hi " . a:group . " guibg=#" . a:guibg
-  endif
-  if a:ctermfg != ""
-    exec "hi " . a:group . " ctermfg=" . a:ctermfg
-  endif
-  if a:ctermbg != ""
-    exec "hi " . a:group . " ctermbg=" . a:ctermbg
-  endif
-  if a:attr != ""
-    exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
-  endif
+	if a:guifg != ""
+		exec "hi " . a:group . " guifg=#" . a:guifg
+	endif
+	if a:guibg != ""
+		exec "hi " . a:group . " guibg=#" . a:guibg
+	endif
+	if a:ctermfg != ""
+		exec "hi " . a:group . " ctermfg=" . a:ctermfg
+	endif
+	if a:ctermbg != ""
+		exec "hi " . a:group . " ctermbg=" . a:ctermbg
+	endif
+	if a:attr != ""
+		exec "hi " . a:group . " gui=" . a:attr . " cterm=" . a:attr
+	endif
 endfun
 
 " Vim Editor Colors
@@ -96,48 +96,48 @@ call <SID>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "")
 call <SID>hi("WildMenu",      s:gui08, "", s:cterm08, "", "")
 
 if &background == "dark"
-  call <SID>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "")
-  call <SID>hi("NonText",       s:gui01, "", s:cterm01, "", "")
-  call <SID>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "")
-  call <SID>hi("LineNr",        s:gui03, s:gui01, s:cterm02, s:cterm00, "")
-  call <SID>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "")
-  call <SID>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none")
-  call <SID>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none")
-  call <SID>hi("VertSplit",     s:gui00, s:gui00, s:cterm00, s:cterm00, "none")
-  call <SID>hi("ColorColumn",  "", s:gui01, "", s:cterm01, "none")
-  call <SID>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none")
-  call <SID>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none")
-  call <SID>hi("CursorLineNr",  s:gui03, s:gui01, s:cterm03, s:cterm01, "")
-  call <SID>hi("PMenu",         s:gui04, s:gui01, s:cterm04, s:cterm01, "none")
-  call <SID>hi("PMenuSel",      s:gui04, s:gui01, s:cterm04, s:cterm01, "reverse")
-  call <SID>hi("TabLine",       s:gui05, s:gui01, s:cterm05, s:cterm01, "reverse")
-  call <SID>hi("TabLineFill",   s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
-  call <SID>hi("TabLineSel",    s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
-  call <SID>hi("DiffAdd",       s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
-  call <SID>hi("DiffChange",    s:gui05, s:gui00, s:cterm05, s:cterm00, "")
-  call <SID>hi("DiffDelete",    s:gui08, s:gui00, s:cterm08, s:cterm00, "")
-  call <SID>hi("DiffText",      s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
+	call <SID>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "")
+	call <SID>hi("NonText",       s:gui01, "", s:cterm01, "", "")
+	call <SID>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "")
+	call <SID>hi("LineNr",        s:gui03, s:gui01, s:cterm02, s:cterm00, "")
+	call <SID>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "")
+	call <SID>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none")
+	call <SID>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none")
+	call <SID>hi("VertSplit",     s:gui00, s:gui00, s:cterm00, s:cterm00, "none")
+	call <SID>hi("ColorColumn",  "", s:gui01, "", s:cterm01, "none")
+	call <SID>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none")
+	call <SID>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none")
+	call <SID>hi("CursorLineNr",  s:gui03, s:gui01, s:cterm03, s:cterm01, "")
+	call <SID>hi("PMenu",         s:gui04, s:gui01, s:cterm04, s:cterm01, "none")
+	call <SID>hi("PMenuSel",      s:gui04, s:gui01, s:cterm04, s:cterm01, "reverse")
+	call <SID>hi("TabLine",       s:gui05, s:gui01, s:cterm05, s:cterm01, "reverse")
+	call <SID>hi("TabLineFill",   s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
+	call <SID>hi("TabLineSel",    s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
+	call <SID>hi("DiffAdd",       s:gui0B, s:gui00, s:cterm0B, s:cterm00, "")
+	call <SID>hi("DiffChange",    s:gui05, s:gui00, s:cterm05, s:cterm00, "")
+	call <SID>hi("DiffDelete",    s:gui08, s:gui00, s:cterm08, s:cterm00, "")
+	call <SID>hi("DiffText",      s:gui0D, s:gui00, s:cterm0D, s:cterm00, "")
 else
-  call <SID>hi("Cursor",        s:gui00, s:gui02, s:cterm00, s:cterm02, "")
-  call <SID>hi("NonText",       s:gui05, "", s:cterm05, "", "")
-  call <SID>hi("Normal",        s:gui02, s:gui07, s:cterm02, s:cterm05, "")
-  call <SID>hi("LineNr",        s:gui04, s:gui06, s:cterm04, s:cterm06, "")
-  call <SID>hi("SpecialKey",    s:gui05, "", s:cterm05, "", "")
-  call <SID>hi("StatusLine",    s:gui04, s:gui06, s:cterm04, s:cterm06, "none")
-  call <SID>hi("StatusLineNC",  s:gui04, s:gui06, s:cterm04, s:cterm06, "none")
-  call <SID>hi("VertSplit",     s:gui05, s:gui05, s:cterm05, s:cterm05, "none")
-  call <SID>hi("CursorColumn",  "", s:gui06, "", s:cterm06, "none")
-  call <SID>hi("CursorLine",    "", s:gui06, "", s:cterm06, "none")
-  call <SID>hi("CursorLineNr",  s:gui04, s:gui06, s:cterm04, s:cterm06, "")
-  call <SID>hi("PMenu",         s:gui05, s:gui03, s:cterm05, s:cterm03, "none")
-  call <SID>hi("PMenuSel",      s:gui05, s:gui03, s:cterm05, s:cterm03, "reverse")
-  call <SID>hi("TabLine",       s:gui05, s:gui01, s:cterm05, s:cterm01, "reverse")
-  call <SID>hi("TabLineFill",   s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
-  call <SID>hi("TabLineSel",    s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
-  call <SID>hi("DiffAdd",       s:gui0B, s:gui0F, s:cterm0B, s:cterm0F, "")
-  call <SID>hi("DiffChange",    s:gui05, s:gui0F, s:cterm05, s:cterm0F, "")
-  call <SID>hi("DiffDelete",    s:gui08, s:gui0F, s:cterm08, s:cterm0F, "")
-  call <SID>hi("DiffText",      s:gui0D, s:gui0F, s:cterm0D, s:cterm0F, "")
+	call <SID>hi("Cursor",        s:gui00, s:gui02, s:cterm00, s:cterm02, "")
+	call <SID>hi("NonText",       s:gui05, "", s:cterm05, "", "")
+	call <SID>hi("Normal",        s:gui02, s:gui07, s:cterm02, s:cterm05, "")
+	call <SID>hi("LineNr",        s:gui04, s:gui06, s:cterm04, s:cterm06, "")
+	call <SID>hi("SpecialKey",    s:gui05, "", s:cterm05, "", "")
+	call <SID>hi("StatusLine",    s:gui04, s:gui06, s:cterm04, s:cterm06, "none")
+	call <SID>hi("StatusLineNC",  s:gui04, s:gui06, s:cterm04, s:cterm06, "none")
+	call <SID>hi("VertSplit",     s:gui05, s:gui05, s:cterm05, s:cterm05, "none")
+	call <SID>hi("CursorColumn",  "", s:gui06, "", s:cterm06, "none")
+	call <SID>hi("CursorLine",    "", s:gui06, "", s:cterm06, "none")
+	call <SID>hi("CursorLineNr",  s:gui04, s:gui06, s:cterm04, s:cterm06, "")
+	call <SID>hi("PMenu",         s:gui05, s:gui03, s:cterm05, s:cterm03, "none")
+	call <SID>hi("PMenuSel",      s:gui05, s:gui03, s:cterm05, s:cterm03, "reverse")
+	call <SID>hi("TabLine",       s:gui05, s:gui01, s:cterm05, s:cterm01, "reverse")
+	call <SID>hi("TabLineFill",   s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
+	call <SID>hi("TabLineSel",    s:gui06, s:gui01, s:cterm06, s:cterm01, "reverse")
+	call <SID>hi("DiffAdd",       s:gui0B, s:gui0F, s:cterm0B, s:cterm0F, "")
+	call <SID>hi("DiffChange",    s:gui05, s:gui0F, s:cterm05, s:cterm0F, "")
+	call <SID>hi("DiffDelete",    s:gui08, s:gui0F, s:cterm08, s:cterm0F, "")
+	call <SID>hi("DiffText",      s:gui0D, s:gui0F, s:cterm0D, s:cterm0F, "")
 endif
 
 " Standard Syntax Highlighting
