@@ -21,5 +21,6 @@ Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/syntastic'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'zaiste/tmux.vim'
+Bundle 'groenewege/vim-less'
 
 filetype plugin indent on
