@@ -52,6 +52,11 @@ if [[ -n $SSH_AUTH_SOCK && $SSH_AUTH_SOCK != $sock ]]; then
 	export SSH_AUTH_SOCK=$sock
 fi
 
+# source homeshick
+if [[ -f ${HOME}/.homesick/repos/homeshick/homeshick.sh ]]; then
+	source ${HOME}/.homesick/repos/homeshick/homeshick.sh
+fi
+
 export CLICOLOR EDITOR PS1 PATH LS_COLORS
 
 # source local definitions
