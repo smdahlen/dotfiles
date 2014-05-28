@@ -5,3 +5,5 @@
 	ui = true
 [push]
 	default = current
+[alias]
+    root = rev-parse --show-toplevel

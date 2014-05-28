@@ -47,11 +47,10 @@ set scrolloff=5
 set nobackup
 set noswapfile
 
-" set default indentation of 2 character-wide tabs
-set noexpandtab
-set softtabstop=2
-set tabstop=2
-set shiftwidth=2
+set expandtab
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
 
 " set default color scheme
 set background=dark
