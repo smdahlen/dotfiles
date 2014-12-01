@@ -22,6 +22,9 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'zaiste/tmux.vim'
 Plugin 'groenewege/vim-less'
+Plugin 'vadimr/bclose.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-vinegar'
 
 call vundle#end()
 filetype plugin indent on

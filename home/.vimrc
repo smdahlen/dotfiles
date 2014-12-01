@@ -67,6 +67,7 @@ set clipboard=unnamed
 
 " set file type specifics (move to ftplugin)
 autocmd FileType tmux setlocal commentstring=#\ %s
+autocmd BufReadPost fugitive://* set bufhidden=delete
 
 " setup tailored key mappings
 let mapleader = ','
@@ -76,18 +77,29 @@ noremap <leader>s ?{<CR>jV/^\s*\}\=$<CR>k:sort<CR>:let @/=''<CR>
 
 nnoremap <leader>- :t.<CR>:s/./-/g<CR>:noh<CR><CR>
 nnoremap <leader>= :t.<CR>:s/./=/g<CR>:noh<CR><CR>
+nnoremap <leader>d "=strftime("%m/%d/%Y")<CR>p
 
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :edit $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-inoremap <c-u> <esc>gUiwea
+nnoremap <leader>bc :Bclose<CR>
+nnoremap <leader>w :write<CR>
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+
+inoremap <leader>u <esc>gUiwea
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0
 
 " define settings for emmet
 let g:user_emmet_settings = {'html': {'empty_element_suffix': '>'}}
 
 " ignore npm and bower directories for ctrlp
 let g:ctrlp_custom_ignore = {
-			\ 'dir': '\v[\/](node_modules|bower_components)$'
+			\ 'dir': '\v[\/](node_modules|bower_components|www|coverage)$'
 			\ }
 
 " hide statusline in ctrlp buffer
@@ -103,3 +115,5 @@ endfunc
 func! ShowStatusLine()
 	set laststatus=2
 endfunc
+
+let g:syntastic_html_checkers=['']

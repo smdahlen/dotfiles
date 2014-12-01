@@ -6,4 +6,6 @@
 [push]
 	default = current
 [alias]
+    co = checkout
+    br = branch
     root = rev-parse --show-toplevel
