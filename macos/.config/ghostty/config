@@ -1,0 +1,7 @@
+theme = Tomorrow Night Eighties
+
+font-family = "Fira Code Nerd Font"
+font-size = 14
+
+background-opacity = 0.95
+keybind = shift+enter=text:\n
