@@ -17,13 +17,13 @@ fi
 echo "Installing packages..."
 
 # Formulas
-brew install stow git neovim
+brew install stow git neovim starship
 
 # Casks
 brew install --cask ghostty font-fira-code-nerd-font
 
 # Stow dotfiles
 echo "Stowing dotfiles..."
-stow git zsh macos
+stow -t ~ git zsh starship macos
 
 echo "Setup complete!"
