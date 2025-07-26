@@ -33,3 +33,7 @@ alias ls='ls --color'
 # Initialize zoxide with cd command
 eval "$(zoxide init --cmd cd zsh)"
 
+# Initialize fzf
+eval "$(fzf --zsh)"
+export FZF_DEFAULT_OPTS="--ansi"
+

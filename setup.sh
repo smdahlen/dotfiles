@@ -17,10 +17,10 @@ fi
 echo "Installing packages..."
 
 # Formulas
-brew install stow git neovim starship zoxide
+brew install stow git neovim starship zoxide fzf 2>/dev/null || true
 
 # Casks
-brew install --cask ghostty font-fira-code-nerd-font
+brew install --cask ghostty font-fira-code-nerd-font 2>/dev/null || true
 
 # Stow dotfiles
 echo "Stowing dotfiles..."
