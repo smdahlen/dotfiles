@@ -24,6 +24,6 @@ brew install --cask ghostty font-fira-code-nerd-font
 
 # Stow dotfiles
 echo "Stowing dotfiles..."
-stow -t ~ git zsh starship macos
+stow -t ~ git zsh starship nvim macos
 
 echo "Setup complete!"
