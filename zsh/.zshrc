@@ -30,3 +30,6 @@ export VISUAL='nvim'
 alias vim='nvim'
 alias ls='ls --color'
 
+# Initialize zoxide with cd command
+eval "$(zoxide init --cmd cd zsh)"
+

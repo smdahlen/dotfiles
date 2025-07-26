@@ -17,7 +17,7 @@ fi
 echo "Installing packages..."
 
 # Formulas
-brew install stow git neovim starship
+brew install stow git neovim starship zoxide
 
 # Casks
 brew install --cask ghostty font-fira-code-nerd-font
