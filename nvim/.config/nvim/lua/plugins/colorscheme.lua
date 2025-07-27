@@ -6,6 +6,7 @@ return {
       vim.o.termguicolors = true
       vim.cmd("colorscheme base16-tomorrow-night-eighties")
       vim.cmd [[ hi Normal guibg=NONE ]]
+      vim.cmd [[ hi NormalNC guibg=NONE ]]
     end,
   }
 }
