@@ -7,7 +7,7 @@ vim.keymap.set("n", "<leader>w", ":write<CR>")
 vim.keymap.set("n", "<CR>", ":noh<CR>")
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
 
-vim.o.scrolloff = 5
+vim.o.scrolloff = 8
 
 -- Set 4-space indents as the global default
 vim.o.expandtab = true
