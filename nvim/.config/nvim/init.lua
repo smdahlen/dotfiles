@@ -3,6 +3,10 @@ vim.g.mapleader = ","
 require("config.lazy")
 
 vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("n", "<leader>w", ":write<CR>")
+vim.keymap.set("n", "<CR>", ":noh<CR>")
+
+vim.o.scrolloff = 5
 
 -- Set 4-space indents as the global default
 vim.o.expandtab = true
