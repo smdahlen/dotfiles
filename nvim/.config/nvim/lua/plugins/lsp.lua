@@ -12,17 +12,20 @@ return {
       'williamboman/mason.nvim',
       'neovim/nvim-lspconfig',
     },
-    opts = {
-      ensure_installed = { 'lua_ls', 'pyright' },
-    },
+    opts = {}
   },
   {
-    'WhoIsSethDaniel/mason-tool-installer.nvim',
+    'WhoIsSethDaniel/mason-tool-installer',
     dependencies = {
       'williamboman/mason.nvim',
     },
     opts = {
-      ensure_installed = { 'stylua', 'ruff' },
+      ensure_installed = {
+        'lua_ls',
+        'pyright',
+        'ruff',
+        'stylua',
+      },
     },
   },
 }
