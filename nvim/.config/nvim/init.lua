@@ -3,7 +3,6 @@ vim.g.mapleader = ','
 vim.keymap.set('i', 'jk', '<ESC>')
 vim.keymap.set('n', '<leader>w', ':write<CR>')
 vim.keymap.set('n', '<CR>', ':noh<CR>')
-vim.keymap.set('t', '<ESC>', '<C-\\><C-n>')
 
 vim.o.scrolloff = 5
 
