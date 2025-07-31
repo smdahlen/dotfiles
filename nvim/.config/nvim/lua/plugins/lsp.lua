@@ -12,7 +12,7 @@ return {
       'williamboman/mason.nvim',
       'neovim/nvim-lspconfig',
     },
-    opts = {}
+    opts = {},
   },
   {
     'WhoIsSethDaniel/mason-tool-installer',
