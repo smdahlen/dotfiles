@@ -41,3 +41,5 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(fzf --zsh)"
 export FZF_DEFAULT_OPTS="--ansi"
 
+# load machine-local secrets
+[ -f "$HOME/.secrets.zsh" ] && source "$HOME/.secrets.zsh"

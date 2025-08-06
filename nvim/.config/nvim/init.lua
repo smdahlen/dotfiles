@@ -2,7 +2,12 @@ vim.g.mapleader = ','
 
 vim.keymap.set('i', 'jk', '<ESC>')
 vim.keymap.set('n', '<CR>', ':noh<CR>')
-vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Show line diagnostics' })
+vim.keymap.set(
+  'n',
+  'gl',
+  vim.diagnostic.open_float,
+  { desc = 'Show line diagnostics' }
+)
 
 vim.o.scrolloff = 5
 
