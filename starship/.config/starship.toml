@@ -1,0 +1,39 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character\
+"""
+
+right_format = """
+$python\
+$jobs\
+$cmd_duration\
+"""
+
+add_newline = true
+
+[directory]
+style = 'bold blue'
+
+[git_branch]
+format = 'on [$symbol$branch(:$remote_branch)]($style) '
+style = 'green'
+symbol = ' '
+
+[git_status]
+style = 'red'
+
+[python]
+format = '[$symbol($version )(\($virtualenv\) )]($style)'
+style = 'yellow'
+symbol = ' '
+version_format = '$raw'
+
+[cmd_duration]
+format = '[$duration]($style)'
+style = '#777777'
+
+[jobs]
+style = 'bold red'
+symbol = ' '
