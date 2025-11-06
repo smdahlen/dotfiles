@@ -20,7 +20,7 @@ echo "Installing packages..."
 brew install stow git neovim starship zoxide fzf uv 2>/dev/null || true
 
 # Casks
-brew install --cask ghostty font-fira-code-nerd-font claude-code 2>/dev/null || true
+brew install --cask ghostty font-fira-code-nerd-font 2>/dev/null || true
 
 # Stow dotfiles
 echo "Stowing dotfiles..."
